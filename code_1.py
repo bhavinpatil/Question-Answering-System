@@ -3,9 +3,6 @@ import torch
 import numpy as np
 import pickle as pkl
 
-# Define your function here
-
-
 def answer_question(passage, question, tokenizer_for_bert, model, max_len=500):
     input_ids = tokenizer_for_bert.encode(question, passage, max_length=max_len, truncation=True)
    
